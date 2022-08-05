@@ -1,0 +1,21 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+.contacts__mail,
+.contacts__phone {
+  @extend %view-header-link;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}

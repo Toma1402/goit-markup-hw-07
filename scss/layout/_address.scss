@@ -1,0 +1,29 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-style: normal;
+  width: 231px;
+  &__text {
+    margin-bottom: 9px;
+    color: var(--white);
+    @extend %view-text;
+  }
+}
+.address__mail {
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  @extend %view-text;
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+.address__phone {
+  color: rgba(255, 255, 255, 0.6);
+  @extend %view-text;
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}

@@ -1,0 +1,19 @@
+.specificity {
+  @extend %section;
+  &__container {
+    @extend %container;
+  }
+  &__list {
+    display: flex;
+  }
+  &__text {
+    @extend %view-text;
+  }
+  
+}
+.specificity__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

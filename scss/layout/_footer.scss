@@ -1,0 +1,18 @@
+.footer {
+  @extend %section;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--primary-backgr-cl);
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    margin-bottom: 20px;
+    @extend %view-logo;
+  }
+  &__part {
+    color: var(--white);
+  }
+}
