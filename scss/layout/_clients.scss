@@ -1,9 +1,9 @@
 .clients {
   @extend %section;
-  &__comntainer {
+  &__container {
     @extend %container;
   }
-  &____list {
+  &__list {
     display: flex;
     gap: 30px;
   }

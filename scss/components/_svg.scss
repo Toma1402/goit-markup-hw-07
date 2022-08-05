@@ -49,7 +49,7 @@
 }
 .team__network-link:hover,
 .team__network-link:focus {
-  &.team__badge {
+  & .team__badge {
     fill: var(--white);
   }
 }
@@ -85,4 +85,18 @@
   fill: currentColor;
   width: 106px;
   height: 60px;
+}
+.modal__icon-close {
+  background-color: var(--white);
+}
+.modal__symbol {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+}
+.modal__icon {
+  position: absolute;
+  top: 28px;
+  left: 12px;
+  transition: border-color var(--cubic), fill var(--cubic);
 }
