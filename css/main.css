@@ -478,21 +478,6 @@ img {
 .modal__second-field:not(:last-child) {
   margin-bottom: 10px;
 }
-.modal__second-field textarea::-webkit-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal__second-field textarea::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal__second-field textarea:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal__second-field textarea::-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal__second-field textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
 
 .modal__input {
   padding: 0;
@@ -506,6 +491,21 @@ img {
 .modal__input--view {
   height: 120px;
   padding-left: 16px;
+}
+.modal__input--view::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__input--view::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__input--view:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__input--view::-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__input--view::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal__checkbox {

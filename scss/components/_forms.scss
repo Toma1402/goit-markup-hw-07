@@ -42,9 +42,6 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
-  & textarea::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-  }
 }
 
 .modal__input {
@@ -57,6 +54,9 @@
   &--view {
     height: 120px;
     padding-left: 16px;
+  }
+  &--view::placeholder {
+    color: rgba(117, 117, 117, 0.5);
   }
 }
 
