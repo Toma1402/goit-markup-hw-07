@@ -58,6 +58,12 @@
   &--view::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-cl);
+    fill: var(--accent-cl);
+    outline: var(--accent-cl);
+  }
 }
 
 .modal__checkbox {
@@ -77,9 +83,7 @@
   border-color: var(--accent-cl);
 }
 .modal__input:hover + .modal__icon,
-.modal__input:focus + .modal__icon,
-.modal__input:hover,
-.modal__input:focus {
+.modal__input:focus + .modal__icon {
   border-color: var(--accent-cl);
   fill: var(--accent-cl);
   outline: var(--accent-cl);
