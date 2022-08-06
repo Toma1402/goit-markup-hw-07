@@ -64,7 +64,6 @@
 .team__title,
 .clients__title {
   margin-bottom: 50px;
-  text-align: center;
   font-size: 36px;
   line-height: 1.1666666667;
   text-align: center;
@@ -117,11 +116,6 @@ img {
 
 .hero__btn {
   padding: 10px 32px;
-}
-
-.modal__btn,
-.hero__btn,
-.subscribe__btn {
   border: none;
   border-radius: 4px;
   font-weight: 700;
@@ -134,16 +128,7 @@ img {
   -webkit-transition: background-color var(--cubic);
   transition: background-color var(--cubic);
 }
-
 .hero__btn:hover, .hero__btn:focus {
-  background-color: var(--main-btn-hover);
-}
-
-.modal__btn:hover, .modal__btn:focus {
-  background-color: var(--main-btn-hover);
-}
-
-.subscribe__btn:hover, .subscribe__btn:focus {
   background-color: var(--main-btn-hover);
 }
 
@@ -167,13 +152,64 @@ img {
   transition: background-color var(--cubic), color var(--cubic), box-shadow var(--cubic);
   transition: background-color var(--cubic), color var(--cubic), box-shadow var(--cubic), -webkit-box-shadow var(--cubic);
 }
-
-.portfolio__btn:hover,
-.portfolio__btn:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   color: var(--white);
   background-color: var(--accent-cl);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.subscribe__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  gap: 10px;
+  -webkit-transition: background-color var(--cubic);
+  transition: background-color var(--cubic);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--accent-cl);
+  cursor: pointer;
+  transition: background-color var(--cubic);
+}
+.subscribe__btn:hover, .subscribe__btn:focus {
+  background-color: var(--main-btn-hover);
+}
+
+.modal__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--accent-cl);
+  cursor: pointer;
+  -webkit-transition: background-color var(--cubic);
+  transition: background-color var(--cubic);
+}
+.modal__btn:hover, .modal__btn:focus {
+  background-color: var(--main-btn-hover);
 }
 
 .modal__btn-close {
@@ -200,36 +236,8 @@ img {
   -webkit-transition: fill var(--cubic);
   transition: fill var(--cubic);
 }
-
-.modal__btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 52px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal__btn-close:hover,
-.modal__btn-close:focus {
+.modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-cl);
-}
-
-.subscribe__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 200px;
-  height: 50px;
-  gap: 10px;
-  -webkit-transition: background-color var(--cubic);
-  transition: background-color var(--cubic);
 }
 
 .specificity__space {
@@ -416,6 +424,38 @@ img {
 .modal__form {
   padding: 40px;
 }
+.modal__label {
+  margin-bottom: 4px;
+}
+.modal__policy {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.modal__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__frame {
+  display: block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  -webkit-transition: border-color var(--cubic), background-color var(--cubic);
+  transition: border-color var(--cubic), background-color var(--cubic);
+}
 
 .modal__primary-field {
   margin-bottom: 20px;
@@ -435,33 +475,23 @@ img {
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
-
 .modal__second-field:not(:last-child) {
   margin-bottom: 10px;
 }
-
 .modal__second-field textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__second-field textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__second-field textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__second-field textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__second-field textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}
-
-.modal__label {
-  margin-bottom: 4px;
 }
 
 .modal__input {
@@ -473,48 +503,15 @@ img {
   -webkit-transition: border-color var(--cubic), fill var(--cubic), outline var(--cubic);
   transition: border-color var(--cubic), fill var(--cubic), outline var(--cubic);
 }
-
 .modal__input--view {
   height: 120px;
   padding-left: 16px;
-}
-
-.modal__policy {
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
-.modal__option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .modal__checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-
-.modal__frame {
-  display: block;
-  margin-right: 8px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  -webkit-transition: border-color var(--cubic), background-color var(--cubic);
-  transition: border-color var(--cubic), background-color var(--cubic);
 }
 
 .modal__checkbox:checked ~ .modal__frame {
@@ -541,7 +538,6 @@ img {
 .subscribe {
   margin-left: 93px;
 }
-
 .subscribe__field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,7 +557,6 @@ img {
   -webkit-transition: outline var(--cubic);
   transition: outline var(--cubic);
 }
-
 .subscribe__input:focus {
   outline: transparent;
 }
@@ -577,16 +572,10 @@ img {
   -webkit-transition: visibility var(--cubic), opacity var(--cubic);
   transition: visibility var(--cubic), opacity var(--cubic);
 }
-
 .backdrop--hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
-
-.backdrop--hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-          transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
@@ -602,6 +591,10 @@ img {
   transition: -webkit-transform var(--cubic);
   transition: transform var(--cubic);
   transition: transform var(--cubic), -webkit-transform var(--cubic);
+}
+.backdrop--hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
 }
 
 .product__thumb {
@@ -922,14 +915,12 @@ img {
   margin-top: -30px;
   margin-left: -30px;
 }
-
 .product__item {
   -ms-flex-preferred-size: calc(33.3333333333% - 30px);
       flex-basis: calc(33.3333333333% - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
-
 .product__description {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -938,7 +929,6 @@ img {
   border: 1px solid var(--border-portfolio);
   border-top: none;
 }
-
 .product__type {
   font-size: 16px;
   line-height: 1.875;
@@ -953,9 +943,7 @@ img {
   transition: box-shadow var(--cubic);
   transition: box-shadow var(--cubic), -webkit-box-shadow var(--cubic);
 }
-
-.product__link:hover,
-.product__link:focus {
+.product__link:hover, .product__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */

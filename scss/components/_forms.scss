@@ -1,5 +1,32 @@
-.modal__form {
-  padding: 40px;
+.modal {
+  &__form {
+    padding: 40px;
+  }
+  &__label {
+    margin-bottom: 4px;
+  }
+  &__policy {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  &__option {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  &__frame {
+    display: block;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    transition: border-color var(--cubic), background-color var(--cubic);
+  }
 }
 .modal__primary-field {
   margin-bottom: 20px;
@@ -12,17 +39,14 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
-}
-.modal__second-field:not(:last-child) {
-  margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  & textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-.modal__second-field textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal__label {
-  margin-bottom: 4px;
-}
 .modal__input {
   padding: 0;
   padding: 12px;
@@ -30,36 +54,16 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--cubic), fill var(--cubic), outline var(--cubic);
+  &--view {
+    height: 120px;
+    padding-left: 16px;
+  }
 }
-.modal__input--view {
-  height: 120px;
-  padding-left: 16px;
-}
-.modal__policy {
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-.modal__option {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
+
 .modal__checkbox {
   appearance: none;
 }
-.modal__frame {
-  display: block;
-  margin-right: 8px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  transition: border-color var(--cubic), background-color var(--cubic);
-}
+
 .modal__checkbox:checked ~ .modal__frame {
   background-color: var(--accent-cl);
 
@@ -82,10 +86,11 @@
 }
 .subscribe {
   margin-left: 93px;
+  &__field {
+    display: flex;
+  }
 }
-.subscribe__field {
-  display: flex;
-}
+
 .subscribe__input {
   display: block;
   padding: 15px 16px;
@@ -97,7 +102,7 @@
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   transition: outline var(--cubic);
-}
-.subscribe__input:focus {
-  outline: transparent;
+  &:focus {
+    outline: transparent;
+  }
 }
