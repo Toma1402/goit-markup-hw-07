@@ -1,15 +1,14 @@
 .specificity {
   @extend %section;
-  &__container {
-    @extend %container;
-  }
-  &__list {
-    display: flex;
-  }
-  &__text {
-    @extend %view-text;
-  }
-  
+}
+.specificity__container {
+  @extend %container;
+}
+.specificity__list {
+  display: flex;
+}
+.specificity__text {
+  @extend %view-text;
 }
 .specificity__item {
   width: 270px;

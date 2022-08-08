@@ -1,12 +1,12 @@
 .clients {
   @extend %section;
-  &__container {
-    @extend %container;
-  }
-  &__list {
-    display: flex;
-    gap: 30px;
-  }
+}
+.clients__container {
+  @extend %container;
+}
+.clients__list {
+  display: flex;
+  gap: 30px;
 }
 .clients__link {
   display: flex;

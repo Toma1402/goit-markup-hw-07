@@ -1,14 +1,15 @@
 .contacts {
   display: flex;
   margin-left: auto;
-
-  &__item:not(:last-child) {
+}
+.contacts__item {
+  &:not(:last-child) {
     margin-right: 50px;
   }
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 .contacts__mail,
 .contacts__phone {

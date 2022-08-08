@@ -8,30 +8,26 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.contacts {
-  &__mail,
-  &__phone {
-    color: var(--secondary-text-color); /*Специфікація*/
+.contacts__mail,
+.contacts__phone {
+  color: var(--secondary-text-color); /*Специфікація*/
 
-    display: inline-flex; /*SVG*/
-    align-items: center; /*SVG*/
-  }
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+  display: inline-flex; /*SVG*/
+  align-items: center; /*SVG*/
 }
-.team {
-  &__socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  &__badge {
-    fill: var(--client-color);
-    transition: fill var(--cubic);
-  }
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.team__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.team__badge {
+  fill: var(--client-color);
+  transition: fill var(--cubic);
 }
 .team__network-link {
   display: flex;
@@ -47,21 +43,18 @@
     background-color: var(--accent-cl);
   }
 }
-.team__network-link:hover,
-.team__network-link:focus {
-  & .team__badge {
-    fill: var(--white);
-  }
+.team__network-link:hover .team__badge,
+.team__network-link:focus .team__badge {
+  fill: var(--white);
 }
-.join {
-  &__badge {
-    fill: var(--client-color);
-    transition: fill var(--cubic);
-  }
-  &__badge--fill {
-    fill: var(--white);
-  }
+.join__badge {
+  fill: var(--client-color);
+  transition: fill var(--cubic);
 }
+.join__badge--fill {
+  fill: var(--white);
+}
+
 .join__network-link {
   display: flex;
   justify-content: center;
@@ -75,10 +68,10 @@
   &:focus {
     background-color: var(--accent-cl);
   }
-  &--background {
-    background-color: var(--social-f-col);
-    transition: background-color var(--cubic);
-  }
+}
+.join__network-link--background {
+  background-color: var(--social-f-col);
+  transition: background-color var(--cubic);
 }
 .clients__icon {
   display: block;

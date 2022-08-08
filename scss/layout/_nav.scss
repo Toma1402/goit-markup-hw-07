@@ -1,13 +1,11 @@
-.nav {
-  &__list {
-    display: flex;
-  }
-
-  &__item:not(:last-child) {
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  &:not(:last-child) {
     margin-right: 50px;
   }
 }
-
 .nav__link {
   @extend %view-header-link;
 

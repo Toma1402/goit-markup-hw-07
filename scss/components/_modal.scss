@@ -7,13 +7,12 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: visibility var(--cubic), opacity var(--cubic);
-  &--hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
 }
-
+.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -23,7 +22,7 @@
   min-height: 581px;
   background-color: var(--white);
   transition: transform var(--cubic);
-  .backdrop--hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
+}
+.modal .backdrop--hidden {
+  transform: translate(-50%, -50%) scale(0.9);
 }

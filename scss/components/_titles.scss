@@ -21,23 +21,19 @@
 .specificity__title--hidden {
   @extend %hidden;
 }
-.to-do,
-.team,
-.clients {
-  &__title {
-    @extend %view-title;
-  }
+.to-do__title,
+.team__title,
+.clients__title {
+  @extend %view-title;
 }
-.join,
-.subscribe {
-  &__title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: calc(16 / 14);
-    text-transform: uppercase;
-    color: var(--white);
-    margin-bottom: 20px;
-  }
+.join__title,
+.subscribe__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
 }
 .product__title {
   margin-bottom: 4px;

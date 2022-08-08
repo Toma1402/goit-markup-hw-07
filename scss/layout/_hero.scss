@@ -9,7 +9,7 @@
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hw04/hero.jpg);
-  &__container {
-    @extend %container;
-  }
+}
+.hero__container {
+  @extend %container;
 }

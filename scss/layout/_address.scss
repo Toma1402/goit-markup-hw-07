@@ -4,11 +4,11 @@
   margin-top: 20px;
   font-style: normal;
   width: 231px;
-  &__text {
-    margin-bottom: 9px;
-    color: var(--white);
-    @extend %view-text;
-  }
+}
+.address__text {
+  margin-bottom: 9px;
+  color: var(--white);
+  @extend %view-text;
 }
 .address__mail {
   margin-bottom: 9px;
