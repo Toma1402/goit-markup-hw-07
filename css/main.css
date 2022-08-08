@@ -497,6 +497,12 @@ img {
   -webkit-transition: border-color var(--cubic), fill var(--cubic), outline var(--cubic);
   transition: border-color var(--cubic), fill var(--cubic), outline var(--cubic);
 }
+.modal__input:hover, .modal__input:focus {
+  border-color: var(--accent-cl);
+  fill: var(--accent-cl);
+  outline: var(--accent-cl);
+}
+
 .modal__input--view {
   height: 120px;
   padding-left: 16px;
@@ -515,11 +521,6 @@ img {
 }
 .modal__input--view::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}
-.modal__input:hover, .modal__input:focus {
-  border-color: var(--accent-cl);
-  fill: var(--accent-cl);
-  outline: var(--accent-cl);
 }
 
 .modal__checkbox {
@@ -550,6 +551,7 @@ img {
 .subscribe {
   margin-left: 93px;
 }
+
 .subscribe__field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,6 +907,8 @@ img {
 }
 
 .address__mail {
+  -webkit-transition: color var(--cubic);
+  transition: color var(--cubic);
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -913,6 +917,8 @@ img {
 }
 
 .address__phone {
+  -webkit-transition: color var(--cubic);
+  transition: color var(--cubic);
   color: rgba(255, 255, 255, 0.6);
 }
 .address__phone:hover, .address__phone:focus {
