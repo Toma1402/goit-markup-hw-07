@@ -50,10 +50,6 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--cubic), fill var(--cubic), outline var(--cubic);
-  &--view {
-    height: 120px;
-    padding-left: 16px;
-  }
 
   &:hover,
   &:focus {
@@ -94,11 +90,10 @@
 }
 .subscribe {
   margin-left: 93px;
-  &__field {
-    display: flex;
-  }
 }
-
+.subscribe__field {
+  display: flex;
+}
 .subscribe__input {
   display: block;
   padding: 15px 16px;
